@@ -41,10 +41,8 @@ All colors MUST be HSL.
     /* Professional quotation colors */
     --quotation-header: 210 100% 35%;
     --quotation-accent: 45 100% 50%;
-    --quotation-text: 215 25% 15%;
-    --quotation-subtext: 215 15% 45%;
-    --quotation-border: 215 20% 88%;
-    --quotation-highlight: 210 20% 96%;
+    --table-header: 210 100% 35%;
+    --table-row-alt: 210 20% 97%;
   }
 
   .dark {
