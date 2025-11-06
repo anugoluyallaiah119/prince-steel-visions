@@ -55,16 +55,14 @@ const Index = () => {
           </div>
           <div className="flex items-center gap-2">
             <span className="font-semibold">Prepared by:</span>
-            <span>Renu</span>
+            <span>Venugopal Rao</span>
           </div>
         </div>
 
         {/* Introduction */}
         <div className="mb-3 text-sm">
           <p className="leading-snug">
-            We are pleased to submit our technical proposal for stainless steel and glass railing works at the Police Club. 
-            Our company specializes in high-quality aluminum and stainless steel works, delivering durable and elegant solutions 
-            that meet the highest standards of safety and design.
+            We are pleased to submit our technical proposal for the supply and installation of galvanized U-shape channels, aluminum cover profiles, and 12 mm clear tempered glass panels at the Police Club. Our company specializes in high-quality aluminum and stainless steel works, delivering durable and elegant solutions that meet the highest standards of safety, performance, and design.
           </p>
         </div>
 
@@ -72,8 +70,10 @@ const Index = () => {
         <div className="mb-3">
           <h2 className="text-base font-bold bg-primary text-primary-foreground px-3 py-1 mb-1.5">SCOPE OF WORK</h2>
           <ul className="list-disc list-inside text-sm space-y-0.5 ml-2">
-            <li>Design, supply, and installation of complete stainless-steel railing system for balconies/staircases/walkways</li>
-            <li>Fixing of clear tempered glass infill panels with polished edges using stainless-steel clamps/brackets</li>
+            <li>Supply and installation of 4 mm galvanized U-shape channels (height 10 cm × width 5 cm)</li>
+            <li>Fixing of 12 mm clear tempered glass panels into U-shape channels using high-strength epoxy</li>
+            <li>Application of cement packing on both sides of U-channel for stability and alignment</li>
+            <li>Installation of 2 mm aluminium cover profile (color as per client selection)</li>
             <li>All materials, consumables, accessories, and skilled labour included</li>
           </ul>
         </div>
@@ -91,14 +91,14 @@ const Index = () => {
             </thead>
             <tbody>
               <tr>
-                <td className="border border-border p-1.5 font-medium">Stainless Steel Pipe (Handrail & Posts)</td>
-                <td className="border border-border p-1.5">2 inch (5 cm), 2 mm thickness, Mirror/Brushed finish</td>
-                <td className="border border-border p-1.5">Thivan</td>
+                <td className="border border-border p-1.5 font-medium">Galvanized sheet</td>
+                <td className="border border-border p-1.5">4 mm Thickness, U shape height 10 cm width 5 cm</td>
+                <td className="border border-border p-1.5">Saudi/Japan</td>
               </tr>
               <tr className="bg-muted/30">
-                <td className="border border-border p-1.5 font-medium">Glass Brackets / Clamps</td>
-                <td className="border border-border p-1.5">4.5 x 5.5 cm, Stainless Steel, Mirror finish</td>
-                <td className="border border-border p-1.5">Thivan</td>
+                <td className="border border-border p-1.5 font-medium">Cover aluminium</td>
+                <td className="border border-border p-1.5">2 mm Colour choice</td>
+                <td className="border border-border p-1.5">Kuwait</td>
               </tr>
               <tr>
                 <td className="border border-border p-1.5 font-medium">Clear Glass Panels</td>
@@ -124,15 +124,25 @@ const Index = () => {
             </thead>
             <tbody>
               <tr>
-                <td className="border border-border p-1.5">Stainless Steel & Glass Railing System (Complete)</td>
-                <td className="border border-border p-1.5 text-center">614</td>
-                <td className="border border-border p-1.5 text-center">Meters</td>
-                <td className="border border-border p-1.5 text-right">65.00</td>
-                <td className="border border-border p-1.5 text-right font-semibold">39,910.00</td>
+                <td className="border border-border p-1.5">For Chalet Front</td>
+                <td className="border border-border p-1.5 text-center">321.5</td>
+                <td className="border border-border p-1.5 text-center">mm</td>
+                <td className="border border-border p-1.5 text-right" rowSpan={3}>45.00</td>
+                <td className="border border-border p-1.5 text-right font-semibold" rowSpan={3}>27,630.00</td>
+              </tr>
+              <tr className="bg-muted/30">
+                <td className="border border-border p-1.5">For VIP Chalet Front</td>
+                <td className="border border-border p-1.5 text-center">66.5</td>
+                <td className="border border-border p-1.5 text-center">mm</td>
+              </tr>
+              <tr>
+                <td className="border border-border p-1.5">For Neighbor Front (including grooved pipe 2")</td>
+                <td className="border border-border p-1.5 text-center">227.8</td>
+                <td className="border border-border p-1.5 text-center">mm</td>
               </tr>
               <tr className="bg-primary text-primary-foreground font-bold">
                 <td colSpan={4} className="border border-border p-1.5 text-right">TOTAL AMOUNT:</td>
-                <td className="border border-border p-1.5 text-right text-lg">39,910 KD</td>
+                <td className="border border-border p-1.5 text-right text-lg">27,630 KD</td>
               </tr>
             </tbody>
           </table>
@@ -168,14 +178,13 @@ const Index = () => {
           </div>
         </div>
 
-        {/* Inclusions & Exclusions */}
+        {/* Process & Exclusions */}
         <div className="grid grid-cols-2 gap-3 mb-3">
           <div>
-            <h3 className="text-sm font-bold bg-muted px-2 py-1 mb-1">✓ INCLUSIONS</h3>
-            <ul className="text-xs list-disc list-inside space-y-0.5">
-              <li>Stainless steel handrails, posts, glass panels, clamps, fasteners</li>
-              <li>Fabrication, cutting, drilling, installation, alignment, finishing</li>
-            </ul>
+            <h3 className="text-sm font-bold bg-muted px-2 py-1 mb-1">✓ PROCESS</h3>
+            <p className="text-xs leading-snug">
+              We will install a U-shaped channel and fix the glass panels securely inside it. Epoxy adhesive will be applied to ensure a firm and stable hold, and cement will be used on both sides of the U-channel to provide additional structural support and proper alignment.
+            </p>
           </div>
           <div>
             <h3 className="text-sm font-bold bg-muted px-2 py-1 mb-1">✗ EXCLUSIONS</h3>
