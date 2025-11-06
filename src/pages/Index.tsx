@@ -16,11 +16,11 @@ const Index = () => {
         </Button>
       </div>
 
-      {/* Single Page Quotation */}
-      <div className="max-w-[210mm] mx-auto p-6 bg-card print:p-4" style={{ minHeight: '297mm' }}>
+      {/* Quotation - Multi-page support */}
+      <div className="max-w-[210mm] mx-auto p-6 bg-card print:p-4">
         
         {/* Header */}
-        <div className="border-b-4 border-primary pb-2 mb-3">
+        <div className="border-b-4 border-primary pb-2 mb-3 print:break-inside-avoid">
           <div className="flex justify-between items-start">
             <div>
               <h1 className="text-2xl font-bold text-primary mb-1">
@@ -43,7 +43,7 @@ const Index = () => {
         </div>
 
         {/* Document Info */}
-        <div className="grid grid-cols-3 gap-4 mb-3 text-sm">
+        <div className="grid grid-cols-3 gap-4 mb-3 text-sm print:break-inside-avoid">
           <div className="flex items-center gap-2">
             <Calendar className="w-4 h-4 text-primary" />
             <span className="font-semibold">Date:</span>
@@ -60,14 +60,14 @@ const Index = () => {
         </div>
 
         {/* Introduction */}
-        <div className="mb-3 text-sm">
+        <div className="mb-3 text-sm print:break-inside-avoid">
           <p className="leading-snug">
             We are pleased to submit our technical proposal for the supply and installation of galvanized U-shape channels, aluminum cover profiles, and 12 mm clear tempered glass panels at the Police Club. Our company specializes in high-quality aluminum and stainless steel works, delivering durable and elegant solutions that meet the highest standards of safety, performance, and design.
           </p>
         </div>
 
         {/* Scope of Work */}
-        <div className="mb-3">
+        <div className="mb-3 print:break-inside-avoid">
           <h2 className="text-base font-bold bg-primary text-primary-foreground px-3 py-1 mb-1.5">SCOPE OF WORK</h2>
           <ul className="list-disc list-inside text-sm space-y-0.5 ml-2">
             <li>Supply and installation of 4 mm galvanized U-shape channels (height 10 cm × width 5 cm)</li>
@@ -79,7 +79,7 @@ const Index = () => {
         </div>
 
         {/* Technical Specifications Table */}
-        <div className="mb-3">
+        <div className="mb-3 print:break-inside-avoid">
           <h2 className="text-base font-bold bg-primary text-primary-foreground px-3 py-1 mb-1.5">TECHNICAL SPECIFICATIONS</h2>
           <table className="w-full border-collapse text-xs">
             <thead>
@@ -110,7 +110,7 @@ const Index = () => {
         </div>
 
         {/* Pricing Table */}
-        <div className="mb-3">
+        <div className="mb-3 print:break-inside-avoid">
           <h2 className="text-base font-bold bg-primary text-primary-foreground px-3 py-1 mb-1.5">COMMERCIALS</h2>
           <table className="w-full border-collapse text-sm">
             <thead>
@@ -152,7 +152,7 @@ const Index = () => {
         </div>
 
         {/* Terms Grid */}
-        <div className="grid grid-cols-2 gap-3 mb-3">
+        <div className="grid grid-cols-2 gap-3 mb-3 print:break-inside-avoid">
           {/* Delivery Timeline */}
           <div>
             <h3 className="text-sm font-bold bg-accent/20 px-2 py-1 mb-1 flex items-center gap-2">
@@ -179,7 +179,7 @@ const Index = () => {
         </div>
 
         {/* Process & Exclusions */}
-        <div className="grid grid-cols-2 gap-3 mb-3">
+        <div className="grid grid-cols-2 gap-3 mb-3 print:break-inside-avoid">
           <div>
             <h3 className="text-sm font-bold bg-muted px-2 py-1 mb-1">✓ PROCESS</h3>
             <p className="text-xs leading-snug">
@@ -196,7 +196,7 @@ const Index = () => {
         </div>
 
         {/* Quality Assurance */}
-        <div className="bg-muted/50 p-2 rounded mb-3 border-l-4 border-primary">
+        <div className="bg-muted/50 p-2 rounded mb-3 border-l-4 border-primary print:break-inside-avoid">
           <p className="text-xs leading-snug">
             <span className="font-semibold">Quality Assurance:</span> All materials used will be of premium quality, with precise 
             workmanship and finishing according to international standards. Our team will execute the work with professionalism, 
@@ -205,7 +205,7 @@ const Index = () => {
         </div>
 
         {/* Footer */}
-        <div className="border-t-2 border-border pt-2 mt-auto">
+        <div className="border-t-2 border-border pt-2 mt-4 print:break-inside-avoid">
           <div className="flex justify-between items-end">
             <div>
               <p className="text-sm font-semibold mb-0.5">Sincerely,</p>
@@ -231,6 +231,10 @@ const Index = () => {
           @page {
             margin: 10mm;
             size: A4 portrait;
+          }
+          .print\\:break-inside-avoid {
+            break-inside: avoid;
+            page-break-inside: avoid;
           }
         }
       `}</style>
